@@ -19,8 +19,12 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
    -  Discussion about the Sprint Backlog.
 
 - **[Sprint 1](changelog/sprint-1.md) - (date from 17/11/2020 until 22/11/2020)** 
-   - Short changes 1
-   - Short changes 2
+   - Create the Box
+   - Testing the Box
+   - Create a Snake
+   - Implementation the movement of the snake
+   - Test the Movement of the Snake
+   - Create the Food
 
 - **[Sprint 2](changelog/sprint-2.md) - (date from x until x)** 
    - Short changes 1
