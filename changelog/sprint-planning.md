@@ -1,12 +1,13 @@
 # Sprint Planning 
-| dd/mm/yyyy
+| 17/11/2020
 
 ### Team (Insert your name)
 | NPM           | Name        |
 | ------------- |-------------|
-| 140810xx00xx  | John Doe    |
-| 140810xx00xx  | Jane Doe    |
-| 140810xx00xx  | Lorem Ipsum |
+| 140810190016  | Muhammad Faishal Dienul Haq |
+| 140810190020  | Join Valentino Tampubolon   |
+| 140810190028  | Robby Sobari                |
+| 140810190044  | Ridho Emir Fajar Alam       |
 
 ## Sprint Backlog Keseluruhan 
 | ID  | Title/Desc | Asignee | 
