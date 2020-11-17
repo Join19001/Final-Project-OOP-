@@ -4,7 +4,7 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 
 [Challenge Guidelines](challenge-guideline.md)
 
-**Please create a description for this project here**
+**Snake Game adalah permainan dengan objek utama adalah seekor ular dimana tugas ular tersebut adalah untuk memakan sebanyak - banyaknya buah yang ada di dalam kotak. Tantangan di dalam game ini adalah untuk tidak mengenai kotak ataupun bagian tubuh ular sendiri.**
 
 ## Credits
 | NPM           | Name        |
