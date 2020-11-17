@@ -4,7 +4,7 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 
 [Challenge Guidelines](challenge-guideline.md)
 
-**Snake Game adalah permainan dengan objek utama adalah seekor ular dimana tugas ular tersebut adalah untuk memakan sebanyak - banyaknya buah yang ada di dalam kotak. Tantangan di dalam game ini adalah untuk tidak mengenai kotak ataupun bagian tubuh ular sendiri.**
+**Snake Game** adalah permainan dengan objek utama adalah seekor ular dimana tugas ular tersebut adalah untuk memakan sebanyak - banyaknya buah yang ada di dalam kotak. Tantangan di dalam game ini adalah untuk tidak mengenai kotak ataupun bagian tubuh ular sendiri.
 
 ## Credits
 | NPM           | Name        |
@@ -16,8 +16,7 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 
 ## Change log
 - **[Sprint Planning](changelog/sprint-planning.md) - (planning date)** 
-   -  Short changes 1
-   - Short changes 2
+   -  Discussion about the Sprint Backlog.
 
 - **[Sprint 1](changelog/sprint-1.md) - (date from x until x)** 
    - Short changes 1
