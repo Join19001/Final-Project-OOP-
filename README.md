@@ -15,10 +15,10 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 | 140810190044  | Ridho Emir Fajar Alam |
 
 ## Change log
-- **[Sprint Planning](changelog/sprint-planning.md) - (planning date)** 
+- **[Sprint Planning](changelog/sprint-planning.md) - (17/11/2020)** 
    -  Discussion about the Sprint Backlog.
 
-- **[Sprint 1](changelog/sprint-1.md) - (date from x until x)** 
+- **[Sprint 1](changelog/sprint-1.md) - (date from 17/11/2020 until 22/11/2020)** 
    - Short changes 1
    - Short changes 2
 
