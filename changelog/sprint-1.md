@@ -4,21 +4,26 @@
 ## Team (Insert your name)
 | NPM           | Name        |
 | ------------- |-------------|
-| 140810xx00xx  | John Doe    |
-| 140810xx00xx  | Jane Doe    |
-| 140810xx00xx  | Lorem Ipsum |
+| 140810190016  | Muhammad Faishal Dienul Haq    |
+| 140810190020  | Join Valentino Tampubolon    |
+| 140810190028  | Robby Sobari |
+| 140810190044  | Ridho Emir Fajar Alam |
 
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| n             | n             |
+| 6             | n             |
 
 ## Sprint 1 Backlog
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
-| 1.1 | Preparing the x | Jane Doe | DONE |
-| 1.2 | Make the x | John Doe | FAILED |
+| 1.1 | Create the Box | Join | |
+| 1.2 | Testing the Box | Join | |
+| 1.3 | Create a Snake | Robby | |
+| 1.4 | Implementation the movement of the snake | Ridho | |
+| 1.5 | Test the Movement of the Snake | Ridho | |
+| 1.6 | Create the Food | Faishal | |
 
 ## Retrospective 
 
