@@ -26,11 +26,12 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
    - Test the Movement of the Snake
    - Create the Food
 
-- **[Sprint 2](changelog/sprint-2.md) - (date from x until x)** 
+- **[Sprint 2](changelog/sprint-2.md) - (date from 23/11/2020 until 30/11/2020)** 
    - Make the food appear randomize
    - Test The Food 
    - Implementation of growth ability after eating the food
    - Implementation The Rules or Logic
+   - Revision Position Head of the Snake in the center of Frame
    
 - **[Sprint 3](changelog/sprint-3.md) - (date from x until x)** 
    - Create a Live Score 
