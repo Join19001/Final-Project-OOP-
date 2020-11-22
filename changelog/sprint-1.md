@@ -1,5 +1,5 @@
 # Scrum Report (Sprint 1)
-| From dd/mm/yyyy to dd/mm/yyyy
+| From 17/11/2020 to 22/11/2020
 
 ## Team (Insert your name)
 | NPM           | Name        |
@@ -27,10 +27,12 @@
 
 ## Retrospective 
 
-Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
+Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas.
 
 ## Next Sprint Backlog (Sprint 2)
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
-| 2.1 | Preparing the x | Jane Doe | 
-| 2.2 | Make the x | John Doe | 
+| 2.1 | Make the food appear randomize |  |
+| 2.2 | Test The Food |  |
+| 2.3 | Implementation of growth ability after eating the food |  |
+| 2.4 | Implementation The Rules or Logic |  | 
