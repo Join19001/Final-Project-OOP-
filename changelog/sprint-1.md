@@ -18,8 +18,8 @@
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
-| 1.1 | Create the Box | Join | |
-| 1.2 | Testing the Box | Join | |
+| 1.1 | Create the Box | Join | Done |
+| 1.2 | Testing the Box | Join | Done |
 | 1.3 | Create a Snake | Robby | |
 | 1.4 | Implementation the movement of the snake | Ridho | |
 | 1.5 | Test the Movement of the Snake | Ridho | |
