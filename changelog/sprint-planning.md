@@ -40,6 +40,14 @@
 | 1.5 | Test the Movement of the Snake | Ridho |
 | 1.6 | Create the Food | Faishal |
 
+## Sprint Backlog Plan (Sprint 2)
+| ID  | Title/Desc | Asignee | 
+| --- | ---------- | ------- | 
+| 2.1 | Make the food appear randomize |  |
+| 2.2 | Test The Food |  |
+| 2.3 | Implementation of growth ability after eating the food |  |
+| 2.4 | Implementation The Rules or Logic |  | 
+
 ## Retrospective 
 
 Sprint Backlog ini akan ada beberapa perubahan dikemudian hari. **ThankYou**
