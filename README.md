@@ -27,12 +27,17 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
    - Create the Food
 
 - **[Sprint 2](changelog/sprint-2.md) - (date from x until x)** 
-   - Short changes 1
-   - Short changes 2
+   - Make the food appear randomize
+   - Test The Food 
+   - Implementation of growth ability after eating the food
+   - Implementation The Rules or Logic
    
 - **[Sprint 3](changelog/sprint-3.md) - (date from x until x)** 
-   - Short changes 1
-   - Short changes 2
+   - Create a Live Score 
+   - Create a Pop Up Score(Game Over)
+   - Logic for Restart The Game
+   - Test the Game
+   - Fixed the Bug 
 
 ## Running The App
 
