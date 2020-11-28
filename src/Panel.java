@@ -5,9 +5,9 @@ import javax.swing.*;
 import javax.swing.JPanel;
 
 public class Panel extends JPanel implements Food, ActionListener{
-    static final int lebarLayar = 500;
-    static final int tinggiLayar = 500;
-    static final int ukuranPetak = 25;
+    static final int lebarLayar = 1000;
+    static final int tinggiLayar = 1000;
+    static final int ukuranPetak = 5;
     static final int banyakPetak = (lebarLayar*tinggiLayar)/ukuranPetak;
     static final int kecepatanGerak = 80;
     final int x[] = new int[banyakPetak];
@@ -38,7 +38,6 @@ public class Panel extends JPanel implements Food, ActionListener{
     }
 
     protected void paintComponent(Graphics g) {
-        // TODO Auto-generated method stub
         super.paintComponent(g);
         draw(g);
     }
@@ -75,11 +74,46 @@ public class Panel extends JPanel implements Food, ActionListener{
             newFood();
         }
     }
+
+    public void rules(){
+        //Kepala menyentuh kepala
+        for(int i = panjangTubuh; i > 0; i--){
+            if((x[0] == x[i]) && (y[0] == y[i])){
+                running = false;
+            }
+        }
+
+        //Kepala menyentuh Frame Kiri
+        if(x[0] < 0){
+            running = false;
+        }
+
+        //Kepala menyentuh Frame Kanan
+        if(x[0] > lebarLayar){
+            running = false;
+        }
+
+        //Kepala menyentuh Frame Atas
+        if(y[0] < 0){
+            running = false;
+        }
+
+        //Kepala menyentuh Frame Bawah
+        if(y[0] > tinggiLayar){
+            running = false;
+        }
+
+        if(!running){
+            waktu.stop();
+        }
+
+    }
     
     public void actionPerformed(ActionEvent e){
         MoveAbility ma = new MoveAbility();
         if(running){
             ma.move(panjangTubuh, x , y ,ukuranPetak, arah);
+            rules();
         }
         repaint();    
     }
