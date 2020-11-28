@@ -114,6 +114,7 @@ public class Panel extends JPanel implements Food, ActionListener{
         if(running){
             ma.move(panjangTubuh, x , y ,ukuranPetak, arah);
             rules();
+            checkFood();
         }
         repaint();    
     }
