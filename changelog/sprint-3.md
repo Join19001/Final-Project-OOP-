@@ -12,19 +12,18 @@
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| n             | n             |
+| 5             | n             |
 
 ## Sprint 3 Backlog
 
-| ID  | Title/Desc | Asignee | Status |
-| --- | ---------- | ------- | ------ |
-| 3.1 | Create a Live Score |  | 
-| 3.2 | Create a Pop Up Score(Game Over) |  |
-| 3.3 | Logic for Restart The Game |  | 
-| 3.4 | Test the Game |  | 
-| 3.5 | Fixed the Bug |  | 
+| ID  |             Title/Desc           | Asignee | Status |
+| --- | -------------------------------- | ------- | ------ |
+| 3.1 | Create a Live Score              | Join    | 
+| 3.2 | Create a Pop Up Score(Game Over) | Robby   |
+| 3.3 | Logic for Restart The Game       | Faishal | 
+| 3.4 | Test the Game                    | Ridho   | 
+| 3.5 | Fixed the Bug                    | Ridho   | 
 
 ## Retrospective 
 
-Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
 
