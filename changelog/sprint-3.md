@@ -4,9 +4,10 @@
 ## Team (Insert your name)
 | NPM           | Name        |
 | ------------- |-------------|
-| 140810xx00xx  | John Doe    |
-| 140810xx00xx  | Jane Doe    |
-| 140810xx00xx  | Lorem Ipsum |
+| 140810190016  | Muhammad Faishal Dienul Haq |
+| 140810190020  | Join Valentino Tampubolon   |
+| 140810190028  | Robby Sobari                |
+| 140810190044  | Ridho Emir Fajar Alam       |
 
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
@@ -17,8 +18,11 @@
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
-| 3.1 | Preparing the x | Jane Doe | DONE |
-| 3.2 | Make the x | John Doe | FAILED |
+| 3.1 | Create a Live Score |  | 
+| 3.2 | Create a Pop Up Score(Game Over) |  |
+| 3.3 | Logic for Restart The Game |  | 
+| 3.4 | Test the Game |  | 
+| 3.5 | Fixed the Bug |  | 
 
 ## Retrospective 
 
