@@ -33,7 +33,7 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
    - Implementation The Rules or Logic
    - Revision Position Head of the Snake in the center of Frame
    
-- **[Sprint 3](changelog/sprint-3.md) - (date from x until x)** 
+- **[Sprint 3](changelog/sprint-3.md) - (date from 30/11/2020 until 7/12/2020)** 
    - Create a Live Score 
    - Create a Pop Up Score(Game Over)
    - Logic for Restart The Game
