@@ -2,8 +2,8 @@ import java.awt.*;
 import javax.swing.*;
 
 public class Frame extends JFrame {
-    static final int lebarLayar = 500;
-    static final int tinggiLayar = 500;
+    static final int lebarLayar = 480;
+    static final int tinggiLayar = 480;
 
     Frame(){
         this.add(new Panel());
