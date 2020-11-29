@@ -23,11 +23,11 @@
 | 2.3 | Implementation of growth ability after eating the food     | Ridho   |
 | 2.4 | Implementation The Rules or Logic                          | Join    | 
 | 2.5 | Revision Position Head of the Snake in the center of Frame | Robby   | 
-| 3.1 | Create a Live Score                                        |         | 
-| 3.2 | Create a Pop Up Score(Game Over)                           |         |
-| 3.3 | Logic for Restart The Game                                 |         | 
-| 3.4 | Test the Game                                              |         | 
-| 3.5 | Fixed the Bug                                              |         | 
+| 3.1 | Create a Live Score                                        | Join    | 
+| 3.2 | Create a Pop Up Score(Game Over)                           | Robby   |
+| 3.3 | Logic for Restart The Game                                 | Faishal | 
+| 3.4 | Test the Game                                              | Ridho   | 
+| 3.5 | Fixed the Bug                                              | Ridho   | 
 
 
 
@@ -54,11 +54,11 @@
 ## Sprint Backlog Plan (Sprint 3)
 | ID  | Title/Desc                       | Asignee | 
 | --- | -------------------------------- | ------- | 
-| 3.1 | Create a Live Score              |         | 
-| 3.2 | Create a Pop Up Score(Game Over) |         |
-| 3.3 | Logic for Restart The Game       |         | 
-| 3.4 | Test the Game                    |         | 
-| 3.5 | Fixed the Bug                    |         | 
+| 3.1 | Create a Live Score              | Join    | 
+| 3.2 | Create a Pop Up Score(Game Over) | Robby   |
+| 3.3 | Logic for Restart The Game       | Faishal | 
+| 3.4 | Test the Game                    | Ridho   | 
+| 3.5 | Fixed the Bug                    | Ridho   | 
 
 ## Retrospective 
 
