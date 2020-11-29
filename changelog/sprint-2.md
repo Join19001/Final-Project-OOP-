@@ -1,31 +1,38 @@
 # Scrum Report (Sprint 2)
-| From dd/mm/yyyy to dd/mm/yyyy
+| From 23/11/2020 to 30/11/2020
 
 ## Team (Insert your name)
 | NPM           | Name        |
 | ------------- |-------------|
-| 140810xx00xx  | John Doe    |
-| 140810xx00xx  | Jane Doe    |
-| 140810xx00xx  | Lorem Ipsum |
+| 140810190016  | Muhammad Faishal Dienul Haq |
+| 140810190020  | Join Valentino Tampubolon   |
+| 140810190028  | Robby Sobari                |
+| 140810190044  | Ridho Emir Fajar Alam       |
 
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| n             | n             |
+| 5             | n             |
 
 ## Sprint 2 Backlog
 
-| ID  | Title/Desc | Asignee | Status |
-| --- | ---------- | ------- | ------ |
-| 2.1 | Preparing the x | Jane Doe | DONE |
-| 2.2 | Make the x | John Doe | FAILED |
+| ID  | Title/Desc                                                 | Asignee | Status |
+| --- | -----------------------------------------------------------| ------- | ------ |
+| 2.1 | Make the food appear randomize                             | Faishal |        |
+| 2.2 | Test The Food                                              | Faishal |        |
+| 2.3 | Implementation of growth ability after eating the food     | Ridho   |        |
+| 2.4 | Implementation The Rules or Logic                          | Join    |        |
+| 2.5 | Revision Position Head of the Snake in the center of Frame | Robby   |        |
 
 ## Retrospective 
 
-Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
+
 
 ## Next Sprint Backlog (Sprint 3)
-| ID  | Title/Desc | Asignee | 
-| --- | ---------- | ------- | 
-| 3.1 | Preparing the x | Jane Doe | 
-| 3.2 | Make the x | John Doe | 
+| ID  | Title/Desc                       | Asignee | 
+| --- | -------------------------------- | ------- | 
+| 3.1 | Create a Live Score              |         | 
+| 3.2 | Create a Pop Up Score(Game Over) |         |
+| 3.3 | Logic for Restart The Game       |         | 
+| 3.4 | Test the Game                    |         | 
+| 3.5 | Fixed the Bug                    |         | 
