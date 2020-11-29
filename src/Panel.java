@@ -5,9 +5,9 @@ import javax.swing.*;
 import javax.swing.JPanel;
 
 public class Panel extends JPanel implements Food, ActionListener{
-    static final int lebarLayar = 1000;
-    static final int tinggiLayar = 1000;
-    static final int ukuranPetak = 5;
+    static final int lebarLayar = 480;
+    static final int tinggiLayar = 480;
+    static final int ukuranPetak = 10;
     static final int banyakPetak = (lebarLayar*tinggiLayar)/ukuranPetak;
     static final int kecepatanGerak = 80;
     final int x[] = new int[banyakPetak];
