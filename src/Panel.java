@@ -12,14 +12,16 @@ public class Panel extends JPanel implements Food, ActionListener{
     static final int kecepatanGerak = 80;
     final int x[] = new int[banyakPetak];
     final int y[] = new int[banyakPetak];
-    char arah = 'D';
+    char arah = 'U';
     boolean running = true;
-    int panjangTubuh = 5;
+    int panjangTubuh = 6;
     int makananX;
     int makananY;
     int termakan;
     Timer waktu;
     Random random;
+    int posisi = 0;
+
     
     Panel(){
         random = new Random();
@@ -49,6 +51,22 @@ public class Panel extends JPanel implements Food, ActionListener{
         }
         g.setColor(Color.white);
         g.fillOval(makananX,makananY,ukuranPetak, ukuranPetak); 
+        if (posisi == 0){
+            x[5] = 250;
+            x[4] = 250;
+            x[3] = 250;
+            x[2] = 250;
+            x[1] = 250;
+            x[0] = 250;
+
+            y[5] = 300;
+            y[4] = 290;
+            y[3] = 280;
+            y[2] = 270;
+            y[1] = 260;
+            y[0] = 250;
+
+        }
         for(int i = 0; i<panjangTubuh; i++){
             if(i == 0){
                 g.setColor(Color.pink);
@@ -122,6 +140,7 @@ public class Panel extends JPanel implements Food, ActionListener{
     public class KeyDirection extends KeyAdapter{
         @Override
         public void keyPressed(KeyEvent e){
+            posisi++;
             switch(e.getKeyCode()){
 
                 case KeyEvent.VK_LEFT:
