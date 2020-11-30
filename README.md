@@ -42,13 +42,12 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 
 ## Running The App
 
-- Ular spawn di tengah screen dengan ukuran 5 sel
-- Ular akan mulai bergerak maju setelah pengguna menekan tombol spasi
-- Ular di arahkan dengan menggunakan tombol-tombol panah
-- Buah pertama akan muncul secara random
-- Jika buah termakan oleh ular, maka ukuran ular akan bertambah sebesar 1 sel.
-- Jika ular menabrak dinding atau menabrak tubuhnya sendiri, makan game akan selesai.
-- Setelah game selesai, akan muncul popup scoreboard dan jika popup ditutup, game akan mereset ke posisi awal
+- Compile main program pada command prompt
+- Layar akan muncul dengan board dan ular berada di tengah
+- Tekan spasi untuk memulai game
+- Setelah spasi ditekan, ular akan bergerak ke atas. untuk menggerakkan ular ke samping atau ke atas, ke bawah dapat menggunakan tombol panah arah.
+- Ketika ular menyentuh sisi atau badannya sendiri, maka akan keluar tulisan Game Over, maka untuk mengulang tekan spasi.
+- Apabila ingin mengakhiri Game dapat menekan tombol silang/close pada sisi kanan atas program.
 
 ## Classes Used
 
