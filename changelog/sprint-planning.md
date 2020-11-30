@@ -62,5 +62,4 @@
 
 ## Retrospective 
 
-Sprint Backlog ini akan ada beberapa perubahan dikemudian hari. **ThankYou**
-Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit **Jamet**
+Sprint Backlog ini akan ada beberapa perubahan dikemudian hari. 
