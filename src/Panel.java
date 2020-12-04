@@ -75,7 +75,11 @@ public class Panel extends JPanel implements Food, ActionListener{
                 g.setColor(Color.black);
                 g.fillOval(x[i], y[i], ukuranPetak+1, ukuranPetak+1);
             }
-        }           
+        }
+        g.setColor(Color.red);
+            g.setFont(new Font("Ink Free", Font.BOLD, 40));
+            FontMetrics metrics = getFontMetrics(g.getFont());
+            g.drawString("Score : "+termakan, (lebarLayar - metrics.stringWidth("Score : "+termakan))/2, g.getFont().getSize());           
     }   
 
     @Override
