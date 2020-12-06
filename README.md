@@ -59,7 +59,7 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 - Food sebagai class interface yang menyimpan 2 method untuk food
 - MoveAbilitiy sebagai class yang menyimpan pergerakan dari ular
 
-![Gambar UML Snake](images/UML.jpeg)
+![Gambar UML Snake](images/UML.jpg)
 
 ## Notable Assumption and Design App Details
 
