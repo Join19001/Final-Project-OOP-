@@ -45,41 +45,45 @@ public class Panel extends JPanel implements Food, ActionListener{
     }
 
     public void draw(Graphics g){
-        for(int i = 0; i < tinggiLayar/ukuranPetak; i++){
-            g.drawLine(i*ukuranPetak, 0, i*ukuranPetak, tinggiLayar);
-            g.drawLine(0, i*ukuranPetak, lebarLayar, i*ukuranPetak);
-        }
-        g.setColor(Color.white);
-        g.fillOval(makananX,makananY,ukuranPetak, ukuranPetak); 
-        if (posisi == 0){
-            x[5] = 250;
-            x[4] = 250;
-            x[3] = 250;
-            x[2] = 250;
-            x[1] = 250;
-            x[0] = 250;
-
-            y[5] = 300;
-            y[4] = 290;
-            y[3] = 280;
-            y[2] = 270;
-            y[1] = 260;
-            y[0] = 250;
-
-        }
-        for(int i = 0; i<panjangTubuh; i++){
-            if(i == 0){
-                g.setColor(Color.pink);
-                g.fillOval(x[i], y[i], ukuranPetak+1, ukuranPetak+1);
-            }else{
-                g.setColor(Color.black);
-                g.fillOval(x[i], y[i], ukuranPetak+1, ukuranPetak+1);
+       if(running){
+            for(int i = 0; i < tinggiLayar/ukuranPetak; i++){
+                g.drawLine(i*ukuranPetak, 0, i*ukuranPetak, tinggiLayar);
+                g.drawLine(0, i*ukuranPetak, lebarLayar, i*ukuranPetak);
             }
-        }
-        g.setColor(Color.red);
-            g.setFont(new Font("Ink Free", Font.BOLD, 40));
-            FontMetrics metrics = getFontMetrics(g.getFont());
-            g.drawString("Score : "+termakan, (lebarLayar - metrics.stringWidth("Score : "+termakan))/2, g.getFont().getSize());           
+            g.setColor(Color.white);
+            g.fillOval(makananX,makananY,ukuranPetak, ukuranPetak); 
+            if (posisi == 0){
+                x[5] = 250;
+                x[4] = 250;
+                x[3] = 250;
+                x[2] = 250;
+                x[1] = 250;
+                x[0] = 250;
+
+                y[5] = 300;
+                y[4] = 290;
+                y[3] = 280;
+                y[2] = 270;
+                y[1] = 260;
+                y[0] = 250;
+
+            }
+            for(int i = 0; i<panjangTubuh; i++){
+                if(i == 0){
+                    g.setColor(Color.pink);
+                    g.fillOval(x[i], y[i], ukuranPetak+1, ukuranPetak+1);
+                }else{
+                    g.setColor(Color.black);
+                    g.fillOval(x[i], y[i], ukuranPetak+1, ukuranPetak+1);
+                }
+            }
+            g.setColor(Color.red);
+                g.setFont(new Font("Ink Free", Font.BOLD, 40));
+                FontMetrics metrics = getFontMetrics(g.getFont());
+                g.drawString("Score : "+termakan, (lebarLayar - metrics.stringWidth("Score : "+termakan))/2, g.getFont().getSize());
+       }else{
+           gameOver(g);
+       }           
     }   
 
     @Override
@@ -95,6 +99,19 @@ public class Panel extends JPanel implements Food, ActionListener{
             termakan++;
             newFood();
         }
+    }
+    public void gameOver(Graphics g){
+        //Teks Score
+        g.setColor(Color.red);
+            g.setFont(new Font("Ink Free", Font.BOLD, 40));
+            FontMetrics metrics1 = getFontMetrics(g.getFont());
+            g.drawString("Score : "+foodEaten, (SCREEN_WIDTH - metrics1.stringWidth("Score : "+foodEaten))/2, g.getFont().getSize());
+
+        //Teks GameOver
+        g.setColor(Color.red);
+        g.setFont(new Font("Ink Free", Font.BOLD, 75));
+        FontMetrics metrics2 = getFontMetrics(g.getFont());
+        g.drawString("Game Over", (SCREEN_WIDTH - metrics2.stringWidth("Game Over"))/2, SCREEN_HEIGHT/2);
     }
 
     public void rules(){
