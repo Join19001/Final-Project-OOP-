@@ -45,10 +45,10 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 - Tekan pada bagian path-nya dan ganti menjadi 'cmd', maka akan muncul tampilan command promt
 - Compile main program pada command prompt dengan mengetik 'javac SnakeGame.java'.
 - Kemudian, run program dengan mengetik 'java SnakeGame' pada command promt
-- Layar akan muncul dengan board dan ular berada di tengah
-- Tekan spasi untuk memulai game
+- Layar akan muncul dengan tulisan 'Game Start'
+- Tekan spasi untuk memulai game dan menampilkan board serta ular.
 - Setelah spasi ditekan, ular akan bergerak ke atas. untuk menggerakkan ular ke samping atau ke atas, ke bawah dapat menggunakan tombol panah arah.
-- Ketika ular menyentuh sisi atau badannya sendiri, maka akan keluar tulisan Game Over, maka untuk mengulang tekan spasi.
+- Ketika ular menyentuh sisi atau badannya sendiri, maka akan keluar tulisan 'Game Over', maka untuk mengulang tekan tombol 'R'.
 - Apabila ingin mengakhiri Game dapat menekan tombol silang/close pada sisi kanan atas program.
 
 ## Classes Used
