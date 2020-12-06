@@ -105,13 +105,13 @@ public class Panel extends JPanel implements Food, ActionListener{
         g.setColor(Color.red);
             g.setFont(new Font("Ink Free", Font.BOLD, 40));
             FontMetrics metrics1 = getFontMetrics(g.getFont());
-            g.drawString("Score : "+foodEaten, (SCREEN_WIDTH - metrics1.stringWidth("Score : "+foodEaten))/2, g.getFont().getSize());
+            g.drawString("Score : "+termakan, (lebarLayar - metrics1.stringWidth("Score : "+termakan))/2, g.getFont().getSize());
 
         //Teks GameOver
         g.setColor(Color.red);
         g.setFont(new Font("Ink Free", Font.BOLD, 75));
         FontMetrics metrics2 = getFontMetrics(g.getFont());
-        g.drawString("Game Over", (SCREEN_WIDTH - metrics2.stringWidth("Game Over"))/2, SCREEN_HEIGHT/2);
+        g.drawString("Game Over", (lebarLayar - metrics2.stringWidth("Game Over"))/2, tinggiLayar/2);
     }
 
     public void rules(){
