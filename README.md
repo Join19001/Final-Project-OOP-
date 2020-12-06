@@ -53,10 +53,27 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 
 ## Classes Used
 
-TO;DO
+- SnakeGame sebagai main class
+- Frame sebagai class untuk membuat frame/board
+- Panel sebagai class untuk menampilkan objek - objek yang ada di dalam board dan prosesnya
+- Food sebagai class interface yang menyimpan 2 method untuk food
+- MoveAbilitiy sebagai class yang menyimpan pergerakan dari ular
 
-UML image here
+![Gambar UML Snake](images/UML.jpeg)
 
 ## Notable Assumption and Design App Details
 
-TO;DO
+- Implementasi dari game terkenal yaitu Snake dimana ada seekor ular yang dapat diarahkan untuk memakan buah. Dan jika ular tersebut memakan buah, panjangnya akan bertambah.
+- Panjang dan tinggi frame aplikasi berukuran 100x100 sel yang dimana satu selnya merupakan persegi dengan ukuran dibebaskan, yang penting sama setiap selnya.
+- Buah berukuran satu sel dan ditempatkan secara acak.
+- Jika ular menabrak dinding atau menabrak tubuhnya sendiri, maka game akan selesai.
+- Ketika game selesai, tunjukan score yang dihitung dari jumlah buah yang dimakan.
+- Nama main class adalah SnakeGame (Contoh command untuk menjalankan adalah: java SnakeGame).
+- Kontrol dari game adalah
+    - Tombol-tombol panah untuk mengarahkan ular.
+    - Spasi untuk memulai game.
+- Ular muncul dengan panjang awal 5 sel dan posisi kepala ada ditengah-tengah area game.
+- Ular akan mulai bergerak maju setelah pengguna memberikan input dengan menekan tombol spasi.
+- Dan juga setelah aplikasi dimulai buah pertama akan muncul secara random.
+- Jika buah termakan oleh ular, maka ular akan bertambah panjangnya pada bagian kepala sebanyak satu sel. Dengan kata lain, pada saat buah dimakan, buah tersebut berubah menjadi kepala baru ular.
+- Jika game selesai, munculkan dialog baru untuk menampilkan score. Dan jika dialog ditutup, game akan mereset ke posisi awal lagi.
