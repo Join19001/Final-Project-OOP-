@@ -12,18 +12,18 @@
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| 5             | n             |
+| 5             | 5             |
 
 ## Sprint 3 Backlog
 
 | ID  |             Title/Desc           | Asignee | Status |
 | --- | -------------------------------- | ------- | ------ |
-| 3.1 | Create a Live Score              | Join    | 
-| 3.2 | Create a Pop Up Score(Game Over) | Robby   |
-| 3.3 | Logic for Restart The Game       | Faishal | 
-| 3.4 | Test the Game                    | Ridho   | 
-| 3.5 | Fixed the Bug                    | Ridho   | 
+| 3.1 | Create a Live Score              | Join    |  Done  |
+| 3.2 | Create a Pop Up Score(Game Over) | Robby   |  Done  |
+| 3.3 | Logic for Restart The Game       | Faishal |  Done  |
+| 3.4 | Test the Game                    | Ridho   |  Done  |
+| 3.5 | Fixed the Bug                    | Ridho   |  Done  |
 
 ## Retrospective 
-
+Restart menggunakan tombol r bukan dengan close.
 
