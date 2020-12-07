@@ -1,7 +1,7 @@
 # Scrum Report (Sprint 2)
 | From 23/11/2020 to 30/11/2020
 
-## Team (Insert your name)
+## Team The-Boyz
 | NPM           | Name        |
 | ------------- |-------------|
 | 140810190016  | Muhammad Faishal Dienul Haq |
