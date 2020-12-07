@@ -3,6 +3,7 @@ import java.awt.event.*;
 import java.util.Random;
 import javax.swing.*;
 import javax.swing.JPanel;
+import javax.swing.ImageIcon;
 
 public class Panel extends JPanel implements Food, ActionListener{
     static final int lebarLayar = 480;
@@ -12,17 +13,21 @@ public class Panel extends JPanel implements Food, ActionListener{
     static final int kecepatanGerak = 80;
     final int x[] = new int[banyakPetak];
     final int y[] = new int[banyakPetak];
-    char arah = 'U';
-    boolean running = true;
+    private char arah = 'R';
+    private boolean running = false;
+    private boolean isRunning = true;
+    private boolean restart = false;
     int panjangTubuh = 6;
     int makananX;
     int makananY;
-    int termakan;
+    int termakan = 0;
     Timer waktu;
     Random random;
     int posisi = 0;
-
-    
+    ImageIcon image = new ImageIcon("..\\images\\siantarman.png");
+    Image imageIcon = image.getImage(); // transform it 
+    Image newimg = imageIcon.getScaledInstance(ukuranPetak+5, ukuranPetak+5,  java.awt.Image.SCALE_DEFAULT); // scale it the smooth way  
+    ImageIcon imageIconFix = new ImageIcon(newimg); 
     Panel(){
         random = new Random();
         this.setPreferredSize(new Dimension (lebarLayar,tinggiLayar));
@@ -34,7 +39,6 @@ public class Panel extends JPanel implements Food, ActionListener{
 
     public void startGame(){
         newFood();
-        running = true;
         waktu = new Timer(kecepatanGerak,this);
         waktu.start();
     }
@@ -46,12 +50,9 @@ public class Panel extends JPanel implements Food, ActionListener{
 
     public void draw(Graphics g){
        if(running){
-            for(int i = 0; i < tinggiLayar/ukuranPetak; i++){
-                g.drawLine(i*ukuranPetak, 0, i*ukuranPetak, tinggiLayar);
-                g.drawLine(0, i*ukuranPetak, lebarLayar, i*ukuranPetak);
-            }
             g.setColor(Color.white);
             g.fillOval(makananX,makananY,ukuranPetak, ukuranPetak); 
+            
             if (posisi == 0){
                 x[5] = 250;
                 x[4] = 250;
@@ -66,23 +67,29 @@ public class Panel extends JPanel implements Food, ActionListener{
                 y[2] = 270;
                 y[1] = 260;
                 y[0] = 250;
-
+                
             }
             for(int i = 0; i<panjangTubuh; i++){
                 if(i == 0){
-                    g.setColor(Color.pink);
-                    g.fillOval(x[i], y[i], ukuranPetak+1, ukuranPetak+1);
+                    imageIconFix.paintIcon(this, g, x[i], y[i]);
                 }else{
                     g.setColor(Color.black);
                     g.fillOval(x[i], y[i], ukuranPetak+1, ukuranPetak+1);
                 }
             }
             g.setColor(Color.red);
-                g.setFont(new Font("Ink Free", Font.BOLD, 40));
-                FontMetrics metrics = getFontMetrics(g.getFont());
-                g.drawString("Score : "+termakan, (lebarLayar - metrics.stringWidth("Score : "+termakan))/2, g.getFont().getSize());
+            g.setFont(new Font("Courier", Font.BOLD, 40));
+            FontMetrics metrics = getFontMetrics(g.getFont());
+            g.drawString("Score : "+termakan, (lebarLayar - metrics.stringWidth("Score : "+termakan))/2, g.getFont().getSize());
        }else{
-           gameOver(g);
+            if(isRunning){
+                gameStart(g); 
+            }else{
+                gameOver(g);
+                if(restart == true){
+                    repaint(); 
+                }
+            }
        }           
     }   
 
@@ -103,15 +110,39 @@ public class Panel extends JPanel implements Food, ActionListener{
     public void gameOver(Graphics g){
         //Teks Score
         g.setColor(Color.red);
-            g.setFont(new Font("Ink Free", Font.BOLD, 40));
+        g.setFont(new Font("Monospace", Font.BOLD, 40));
+        FontMetrics metrics1 = getFontMetrics(g.getFont());
+        g.drawString("Score : "+termakan, (lebarLayar - metrics1.stringWidth("Score : "+termakan))/2, g.getFont().getSize());
+
+        //Teks GameOver
+        g.setColor(Color.red);
+        g.setFont(new Font("Monospace", Font.BOLD, 75));
+        FontMetrics metrics2 = getFontMetrics(g.getFont());
+        g.drawString("Game Over", (lebarLayar - metrics2.stringWidth("Game Over"))/2, tinggiLayar/2);
+        
+
+        g.setColor(Color.blue);
+        g.setFont(new Font("Monospace", Font.PLAIN, 30));
+        FontMetrics metrics3 = getFontMetrics(g.getFont());
+        g.drawString("Press R to Restart", (lebarLayar - metrics3.stringWidth("Press R to Restart"))/2, (int)(tinggiLayar/1.5));
+    }
+
+    public void gameStart(Graphics g){
+        g.setColor(Color.blue);
+            g.setFont(new Font("Monospace", Font.BOLD, 40));
             FontMetrics metrics1 = getFontMetrics(g.getFont());
             g.drawString("Score : "+termakan, (lebarLayar - metrics1.stringWidth("Score : "+termakan))/2, g.getFont().getSize());
 
         //Teks GameOver
-        g.setColor(Color.red);
-        g.setFont(new Font("Ink Free", Font.BOLD, 75));
+        g.setColor(Color.blue);
+        g.setFont(new Font("Monospace", Font.BOLD, 50));
         FontMetrics metrics2 = getFontMetrics(g.getFont());
-        g.drawString("Game Over", (lebarLayar - metrics2.stringWidth("Game Over"))/2, tinggiLayar/2);
+        g.drawString("Game START!", (lebarLayar - metrics2.stringWidth("Game START!"))/2, tinggiLayar/2);
+        
+        g.setColor(Color.blue);
+        g.setFont(new Font("Monospace", Font.PLAIN, 30));
+        FontMetrics metrics3 = getFontMetrics(g.getFont());
+        g.drawString("Press Space to Start", (lebarLayar - metrics3.stringWidth("Press Space to Start"))/2, (int)(tinggiLayar/1.5));
     }
 
     public void rules(){
@@ -119,27 +150,32 @@ public class Panel extends JPanel implements Food, ActionListener{
         for(int i = panjangTubuh; i > 0; i--){
             if((x[0] == x[i]) && (y[0] == y[i])){
                 running = false;
+                isRunning = false;
             }
         }
 
         //Kepala menyentuh Frame Kiri
         if(x[0] < 0){
             running = false;
+            isRunning = false;
         }
 
         //Kepala menyentuh Frame Kanan
-        if(x[0] > lebarLayar){
+        if(x[0] >= lebarLayar){
             running = false;
+            isRunning = false;
         }
 
         //Kepala menyentuh Frame Atas
         if(y[0] < 0){
             running = false;
+            isRunning = false;
         }
 
         //Kepala menyentuh Frame Bawah
-        if(y[0] > tinggiLayar){
+        if(y[0] >= tinggiLayar){
             running = false;
+            isRunning = false;
         }
 
         if(!running){
@@ -152,8 +188,8 @@ public class Panel extends JPanel implements Food, ActionListener{
         MoveAbility ma = new MoveAbility();
         if(running){
             ma.move(panjangTubuh, x , y ,ukuranPetak, arah);
-            rules();
             checkFood();
+            rules();
         }
         repaint();    
     }
@@ -187,6 +223,28 @@ public class Panel extends JPanel implements Food, ActionListener{
                         arah = 'D';
                     }
                 break;
+
+                case KeyEvent.VK_SPACE:
+                    if(running==false){
+                        posisi=0;
+                        running = true;
+                    }
+                    
+                break;
+
+                case KeyEvent.VK_R:
+                    if(isRunning == false && running == false){
+                        waktu.start();
+                        termakan = 0;
+                        arah = 'U';
+                        panjangTubuh = 6;
+                        isRunning = true;
+                        posisi = 0;
+                        running = true;
+                        restart = true;
+                    }                    
+                break;
+                
             }
         }
     }
