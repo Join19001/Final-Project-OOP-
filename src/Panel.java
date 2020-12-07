@@ -17,13 +17,13 @@ public class Panel extends JPanel implements Food, ActionListener{
     private boolean running = false;
     private boolean isRunning = true;
     private boolean restart = false;
-    int panjangTubuh = 6;
-    int makananX;
-    int makananY;
-    int termakan = 0;
+    private int panjangTubuh = 6;
+    private int makananX;
+    private int makananY;
+    private int termakan = 0;
     Timer waktu;
     Random random;
-    int posisi = 0;
+    private int posisi = 0;
     ImageIcon image = new ImageIcon("..\\images\\siantarman.png");
     Image imageIcon = image.getImage(); // transform it 
     Image newimg = imageIcon.getScaledInstance(ukuranPetak+5, ukuranPetak+5,  java.awt.Image.SCALE_DEFAULT); // scale it the smooth way  
